@@ -1,0 +1,26 @@
+.logo {    
+    text-decoration: none;
+    color: $color-brand;
+    @media screen and (max-width:($desktop - 1px)) {
+        @include setFont(700,24px,0.72px,normal,$logo-font-family); 
+    }
+    @media screen and (min-width:$desktop){
+        @include setFont(700, 26px, 0.78px, normal, $logo-font-family);
+        // font-size: 26px;            
+        // letter-spacing: 0.78px;
+    }
+    &--black-ended{
+        color: $color-primary;
+    }
+    &--white-ended{
+        color:$color-white;
+    }   
+}
+ .header__logo{ 
+        @media screen and (min-width:$tablet) and (max-width:($desktop - 1px)){
+            margin-right: 88px;
+        }
+        @media screen and (min-width:$desktop) {
+            margin-right: 93px;
+        } 
+    }

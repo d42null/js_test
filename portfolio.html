@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>WebStudio Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container--flex">
+        <nav class="nav">
+          <a class="logo header__logo" href="./index.html"
+            >Web<span class="logo logo--black-ended">Studio</span></a
+          >
+          <button class="mobile-menu__toggle js-open-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="list nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="nav__link nav__link--current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list header__list">
+          <li>
+            <a
+              class="nav__link nav__link--contact"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="nav__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="nav__link nav__link--contact" href="tel:+380961111111">
+              <svg class="nav__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <ul class="list list--buttons">
+            <li>
+              <button class="button button--filter" type="button">Усі</button>
+            </li>
+            <li>
+              <button class="button button--filter" type="button">
+                Веб-сайти
+              </button>
+            </li>
+            <li>
+              <button class="button button--filter" type="button">
+                Додатки
+              </button>
+            </li>
+            <li>
+              <button class="button button--filter" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button class="button button--filter" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="list">
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/technocriak-450.jpg 450w,
+                        ./images/technocriak-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/technocriak-d-370.jpg 370w,
+                        ./images/technocriak-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/technocriak-t-354.jpg 354w,
+                        ./images/technocriak-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/technocriak-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/new_orlean_poster-450.jpg 450w,
+                        ./images/new_orlean_poster-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/new_orlean_poster-d-370.jpg 370w,
+                        ./images/new_orlean_poster-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/new_orlean_poster-t-354.jpg 354w,
+                        ./images/new_orlean_poster-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/new_orlean_poster-450.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood_rest-450.jpg 450w,
+                        ./images/seafood_rest-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw" />
+
+                    <source
+                      srcset="
+                        ./images/seafood_rest-d-370.jpg 370w,
+                        ./images/seafood_rest-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px" />
+                    <source
+                      srcset="
+                        ./images/seafood_rest-t-354.jpg 354w,
+                        ./images/seafood_rest-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px" />
+                    <img
+                      class="card__img"
+                      src="./images/seafood_rest-450.jpg"
+                      alt="Ресторан Seafood"
+                  /></picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+
+                <div class="card__text-container">
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime_project-450.jpg 450w,
+                        ./images/prime_project-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/prime_project-d-370.jpg 370w,
+                        ./images/prime_project-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime_project-t-354.jpg 354w,
+                        ./images/prime_project-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/prime_project-450.jpg"
+                      alt="Проєкт Prime"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Проєкт Prime</h2>
+                  <p class="card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes_project-450.jpg 450w,
+                        ./images/boxes_project-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/boxes_project-d-370.jpg 370w,
+                        ./images/boxes_project-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes_project-t-354.jpg 354w,
+                        ./images/boxes_project-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/boxes_project-450.jpg"
+                      alt="Проєкт Boxes"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Проєкт Boxes</h2>
+                  <p class="card__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration-450.jpg 450w,
+                        ./images/inspiration-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/inspiration-d-370.jpg 370w,
+                        ./images/inspiration-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration-t-354.jpg 354w,
+                        ./images/inspiration-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/inspiration-450.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Inspiration has no Borders</h2>
+                  <p class="card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limited_edition-450.jpg 450w,
+                        ./images/limited_edition-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/limited_edition-d-370.jpg 370w,
+                        ./images/limited_edition-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited_edition-t-354.jpg 354w,
+                        ./images/limited_edition-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/limited_edition-450.jpg"
+                      alt="Видання Limited Edition"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Видання Limited Edition</h2>
+                  <p class="card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/lab_project-450.jpg 450w,
+                        ./images/lab_project-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/lab_project-d-370.jpg 370w,
+                        ./images/lab_project-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab_project-t-354.jpg 354w,
+                        ./images/lab_project-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/lab_project-450.jpg"
+                      alt="Проєкт LAB"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Проєкт LAB</h2>
+                  <p class="card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growing_business-450.jpg 450w,
+                        ./images/growing_business-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/growing_business-d-370.jpg 370w,
+                        ./images/growing_business-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing_business-t-354.jpg 354w,
+                        ./images/growing_business-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/growing_business-450.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__overlay-text"></p>
+                  </div>
+                </div>
+                <div class="card__text-container">
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div>
+          <a class="logo" href="./index.html"
+            >Web<span class="logo logo--white-ended">Studio</span></a
+          >
+          <address>
+            <ul class="list list--address">
+              <li>
+                <a
+                  class="footer__link"
+                  href="https://goo.gl/maps/rApDGopZvRSZXnWv6"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link footer__link--gray"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link footer__link--gray"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <p class="footer__title">приєднуйтесь</p>
+          <ul class="list list--socials">
+            <li>
+              <a class="social-link social-link--inversed" href="#">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link social-link--inversed" href="#">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link social-link--inversed" href="#">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link social-link--inversed" href="#">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form>
+          <label>
+            <span class="footer__title">Підпишіться на розсилку</span>
+            <input
+              class="footer__email-input"
+              type="email"
+              name="email-subscribe"
+              placeholder="E-mail"
+              required
+          /></label>
+          <button class="button footer__button" type="submit">
+            Підписатися
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+      <ul class="mobile-menu">
+        <li>
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+        </li>
+        <li>
+          <a
+            class="mobile-menu__link mobile-menu__link--current"
+            href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu">
+        <li>
+          <a
+            class="mobile-menu__link mobile-menu__link--tel"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-menu__link mobile-menu__link--mail"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <ul class="list list--socials">
+          <li>
+            <a
+              class="mobile-menu__link mobile-menu__link--social mobile-menu__link--right-bordered"
+              href="#"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__link mobile-menu__link--social mobile-menu__link--right-bordered"
+              href="#"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__link mobile-menu__link--social mobile-menu__link--right-bordered"
+              href="#"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu__link mobile-menu__link--social" href="#"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </ul>
+
+      <button class="mobile-menu__toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

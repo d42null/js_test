@@ -1,0 +1,60 @@
+.footer{
+    background-color: $color-gray-bg;
+    padding: 60px 0;
+    &__link{
+        @include setFont(400,14px,0.42px,1.71429);
+        font-style: normal;
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: $color-white;
+        &--gray{
+            color: $color-footer-link;
+        }
+        &:focus,
+        &:hover{
+            color: $color-brand;
+        }
+    }
+    &__title{
+        display: block;
+        margin:0 0 20px 0;
+        @include setFont(700,14px,0.42px);
+        text-transform: uppercase;
+        color: $color-white;
+    }
+    &__email-input{
+        width: 100%;
+        height: 50px;
+        max-width:450px; 
+        @media screen  and (min-width:$desktop){
+            max-width: 358px;
+            width: 358px;
+        }
+        padding: 15px 16px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(33, 150, 243, 0);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        @include setFont(400,16px,0.48px,1.25);
+        color: $color-bg-team;
+        &::placeholder{
+            color:$color-footer-link;
+        }
+    }
+}
+.footer__container{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    @media screen and (max-width:($desktop - 1px)) {
+        justify-content:space-around; 
+        text-align: center;
+        gap:60px;        
+    }
+    @media screen and (min-width:$desktop) {
+        justify-content: flex-start;
+        text-align:left;       
+        gap: 93px;
+    }
+}

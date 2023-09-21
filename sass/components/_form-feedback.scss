@@ -1,0 +1,116 @@
+.form-feedback{
+
+    &__group{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        margin: 0 0 12px;        
+        text-align: center;
+        @include setFont(700,20px,0.6px);
+        color: $color-primary;
+        @media screen and (max-width:($mobile - 1px)) {
+                font-size: 14px;
+                letter-spacing: 0.28px;
+            }
+    }
+    &__label{
+        position: relative;
+        margin:0 0 10px;
+        @include setFont(400, 12px, 0.12px);
+        color:$color-secondary;
+        &--checkbox{
+            display: flex;
+            align-items: center;
+            
+            margin:20px 0 30px;    
+            @include setFont(400, 12px, 0.36px);
+            @media screen and (min-width:$desktop) {
+                @include setFont(400, 14px, 0.42px, 1.71429);
+                align-self: center;   
+            }     
+        }
+    }
+    &__input{
+        margin-top: 4px ;
+        width: 100%;
+        padding: 12px 42px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus,
+        &:hover{
+            border-color: $color-brand;
+            outline: none;
+        }       
+    }
+    &__icon{
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+        fill: $color-primary;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .form-feedback__input:focus + &,
+        .form-feedback__input:hover + &{
+                fill: $color-brand;
+            }
+    }
+    &__comment{
+        margin-top: 4px;
+        width: 100%;
+        max-height: 120px;
+        @media screen and (max-width:($mobile - 1px)) {
+             max-height: 60px;
+            }
+        resize: none;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 12px 16px;
+        @include setFont(400,14px,0.14px);     
+        @media screen and (min-width:$desktop) {
+            font-size: 12px;
+            letter-spacing: 0.12px;
+        }   
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &::placeholder{
+            color: rgba(117, 117, 117, 0.5);
+        }
+        &:focus,
+        &:hover{
+            border-color: $color-brand;
+            outline: none;
+        }
+    }
+    &__cond-link{
+        color:$color-brand;
+    }
+    &__checkbox{
+        &--custom{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 16px;
+            height: 15px;
+            margin-right: 7px;
+            border: 2px solid $color-primary;
+            border-radius: 2px;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:focus,
+            &:hover,
+            .form-feedback__label--checkbox:hover &,
+            .form-feedback__checkbox:focus + &
+            {
+                border-color:$color-brand;
+            }
+        }
+        &:checked + .form-feedback__checkbox--custom{
+            border-color: $color-brand;
+            background-color: $color-brand;
+        }
+    }
+    
+}

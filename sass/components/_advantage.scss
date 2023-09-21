@@ -1,0 +1,41 @@
+.advantage{
+        @media screen and (max-width:($tablet - 1px)) {
+        flex-basis: 100%;
+        }
+        @media screen and (min-width:$tablet) and (max-width:($desktop - 1px)) {
+            flex-basis: calc((100% - 30px)/2);
+        }    
+        @media screen and (min-width:$desktop) {
+            flex-basis: calc((100% - 3*30px)/4);
+        }
+
+    &__icon-thumb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        height: 120px;
+        margin-bottom: 30px;        
+        background-color: $color-bg-team;
+        border-radius: 4px;
+    }
+    &__icon{
+        width: 70px;
+        height: 70px;
+    }
+    &__title {
+        @include setFont(700,14px,0.42px);
+        color:$color-primary;       
+        text-transform: uppercase;
+        margin:0 0 10px;
+        @media screen and (max-width:767px){
+            text-align: center;
+        }
+
+    }
+    &__text {
+        margin: 0;
+        @include setFont(400,14px,0.42px,1.71429);
+        color:$color-secondary;
+    }
+}
